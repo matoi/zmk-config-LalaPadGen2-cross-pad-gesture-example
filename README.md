@@ -34,6 +34,10 @@
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.overlay` — `cross-pad-peer-input` プロパティを追加
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.overlay` — `cross-pad-peer-input` プロパティを追加
 
+## 注意事項
+
+この機能は [ShiniNet/zmk-driver-iqs9151](https://github.com/ShiniNet/zmk-driver-iqs9151) 本家には含まれていない**独自拡張の PoC (Proof of Concept)** です。動作は無保証であり、予告なく変更・削除される可能性があります。本家ドライバとの互換性も保証されません。
+
 ## ドライバリポジトリ
 
 https://github.com/matoi/zmk-driver-iqs9151/tree/feature/cross-pad-gesture
