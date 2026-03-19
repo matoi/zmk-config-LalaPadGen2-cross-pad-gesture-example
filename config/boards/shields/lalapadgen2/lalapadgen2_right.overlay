@@ -22,3 +22,7 @@
 &trackpad_listener_L {
     status = "okay";
 };
+
+&iqs9151 {
+    cross-pad-peer-input = <&trackpad_split_L>;
+};
