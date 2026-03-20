@@ -17,6 +17,8 @@ Place **one finger** on each trackpad and slide either finger **horizontally**.
 
 By default, this works as Ctrl + scroll wheel. The modifier can be changed in the configuration (e.g., Mouse Button 4).
 
+If pinch zoom works in the opposite direction, add `CONFIG_INPUT_IQS9151_CROSS_PAD_PINCH_INVERT=y` to the right `.conf`. This is typically needed when `zip_scroll_transform` is used to invert scroll direction.
+
 ### Press & Hold (Drag)
 
 Place **two fingers** on one trackpad and **one finger** on the other.
