@@ -33,8 +33,10 @@ This example configuration applies only the following changes to the original [z
 - `config/west.yml` — Changed the driver repository and branch to the fork
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.conf` — Added `CONFIG_INPUT_IQS9151_CROSS_PAD=y`
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.conf` — Added `CONFIG_INPUT_IQS9151_CROSS_PAD=y`
+- `config/boards/shields/lalapadgen2/lalapadgen2.dtsi` — Added `cross_pad_gate` input-processor node
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.overlay` — Added `cross-pad-peer-input` property
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.overlay` — Added `cross-pad-peer-input` property
+- `config/lalapadgen2.keymap` — Added `<&cross_pad_gate>` to the peripheral listener's input-processor chains
 
 ## Building Firmware
 

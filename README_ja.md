@@ -33,8 +33,10 @@
 - `config/west.yml` — ドライバのリポジトリとブランチを fork に変更
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.conf` — `CONFIG_INPUT_IQS9151_CROSS_PAD=y` を追加
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.conf` — `CONFIG_INPUT_IQS9151_CROSS_PAD=y` を追加
+- `config/boards/shields/lalapadgen2/lalapadgen2.dtsi` — `cross_pad_gate` input-processor ノードを追加
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.overlay` — `cross-pad-peer-input` プロパティを追加
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.overlay` — `cross-pad-peer-input` プロパティを追加
+- `config/lalapadgen2.keymap` — ペリフェラルリスナーの input-processor チェインに `<&cross_pad_gate>` を追加
 
 ## ファームウェアのビルド
 
