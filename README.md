@@ -36,6 +36,14 @@ This example configuration applies only the following changes to the original [z
 - `config/boards/shields/lalapadgen2/lalapadgen2_left.overlay` — Added `cross-pad-peer-input` property
 - `config/boards/shields/lalapadgen2/lalapadgen2_right.overlay` — Added `cross-pad-peer-input` property
 
+## Building Firmware
+
+The latest pre-built firmware from this repository is available on the [Actions page](https://github.com/matoi/zmk-config-LalaPadGen2-cross-pad-gesture-example/actions).
+
+To customize the configuration, fork this repository and enable GitHub Actions on your fork. The firmware will be built automatically on push.
+
+> **Note:** Even if your config repository has not changed, you may need to rebuild the firmware when the [driver repository](https://github.com/matoi/zmk-driver-iqs9151/tree/feature/cross-pad-gesture) is updated. To trigger a rebuild, go to the Actions tab on your fork and manually run the workflow, or push an empty commit.
+
 ## Notice
 
 This feature is **an independent PoC (Proof of Concept) extension** not included in the upstream [ShiniNet/zmk-driver-iqs9151](https://github.com/ShiniNet/zmk-driver-iqs9151). It comes with no guarantee of functionality and may be changed or removed without notice. Compatibility with the upstream driver is not guaranteed.
