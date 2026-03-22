@@ -28,6 +28,14 @@ Place **two fingers** on one trackpad and **one finger** on the other.
 - Even if you lift and re-place the one-finger side, the drag continues as long as the two-finger side is maintained
 - Lifting the two-finger side ends the drag
 
+### 3-Finger Swipe (Browser Back/Forward)
+
+Place **three fingers** on one trackpad and any number of fingers on the other, then **swipe horizontally**.
+
+- Swipe right → **Browser forward** (default: Cmd+] on macOS)
+- Swipe left → **Browser back** (default: Cmd+[ on macOS)
+- The keystroke preset can be changed via `CONFIG_INPUT_IQS9151_CROSS_PAD_SWIPE_PRESET` (0=macOS browser, 1=Windows browser, 2=macOS workspace switch)
+
 ## Changes from the Original
 
 This example configuration applies only the following changes to the original [zmk-config-LalaPadGen2](https://github.com/ShiniNet/zmk-config-LalaPadGen2):
