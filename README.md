@@ -4,6 +4,11 @@
 
 An example firmware configuration for LalaPad Gen2 with the [cross-pad gesture feature of zmk-driver-iqs9151](https://github.com/matoi/zmk-driver-iqs9151/tree/feature/cross-pad-gesture) enabled.
 
+> **Known Limitations:**
+> - When placing fingers on both trackpads nearly simultaneously, normal input processing (button press/release, cursor movement, etc.) may briefly run before the cross-pad gesture activates. This is more noticeable with press & hold and 3-finger swipe gestures
+> - If one trackpad continues to be operated in this state, repeated button down → up events may occur
+> - Adding a short delay before starting normal processing is expected to resolve these issues, but this has not been implemented yet
+
 ## What is Cross-Pad Gesture?
 
 A feature that executes special gestures by **simultaneously touching** the trackpads on both halves of a split keyboard.
